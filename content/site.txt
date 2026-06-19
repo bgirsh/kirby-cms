@@ -14,7 +14,7 @@ Mainnavigation:
   label: Engineering
   url: '#tech'
 - 
-  label: Sizes
+  label: Size
   url: '#sizes'
 - 
   label: Find a dealer
