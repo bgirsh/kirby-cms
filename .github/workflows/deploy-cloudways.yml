@@ -24,7 +24,6 @@ jobs:
 
             rsync -rlz --delete --no-perms --no-owner --no-group \
               --exclude='.git' \
-              --exclude='vendor' \
               --exclude='site/accounts' \
               --exclude='site/cache' \
               --exclude='site/sessions' \
