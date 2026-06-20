@@ -17,9 +17,12 @@ jobs:
           username: ${{ secrets.CLOUDWAYS_USER }}
           key: ${{ secrets.CLOUDWAYS_SSH_KEY }}
           script: |
+            git config --global --add safe.directory /home/941598.cloudwaysapps.com/kbpsfjgpxg/git_repo
+
             cd ~/applications/kbpsfjgpxg/git_repo
             git pull origin main
-            rsync -rltz --delete --no-perms --no-owner --no-group \
+
+            rsync -rlz --delete --no-perms --no-owner --no-group \
               --exclude='.git' \
               --exclude='vendor' \
               --exclude='site/accounts' \
