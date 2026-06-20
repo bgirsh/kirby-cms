@@ -19,7 +19,7 @@ jobs:
           script: |
             cd ~/applications/kbpsfjgpxg/git_repo
             git pull origin main
-            rsync -av --delete \
+            rsync -rltz --delete --no-perms --no-owner --no-group \
               --exclude='.git' \
               --exclude='site/accounts' \
               --exclude='site/cache' \
