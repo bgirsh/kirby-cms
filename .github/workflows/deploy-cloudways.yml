@@ -21,6 +21,7 @@ jobs:
             git pull origin main
             rsync -rltz --delete --no-perms --no-owner --no-group \
               --exclude='.git' \
+              --exclude='vendor' \
               --exclude='site/accounts' \
               --exclude='site/cache' \
               --exclude='site/sessions' \
